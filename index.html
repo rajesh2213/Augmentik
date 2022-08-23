@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSprototype</title>
+    <link rel="stylesheet" href="style.css ">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("zr3fhK2bfn_g_y_5j");
+   })();
+</script>
+
+</head>
+
+<body>
+    <nav class="navbar"> </nav>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Subscribe</h2>
+        <p>
+            Starterra is the first gamified launchpad with a unique combination of guranteed prize pools.
+        </p>
+        <p1>Enter your Name</p1>
+        <input class="name" placeholder="Name"><br>
+        <p1>Enter your Email</p1>
+        <input class="email" placeholder="Email">
+        <a class="sub" href="#">Submit</a>
+    </div>
+
+    <header class="hero-section">
+        <img src="./images/coverimggx9zkI0.jpg" muted loop autoplay></img>
+        <div class="content">
+            <h1 class="heading">Welcome to   <span style="color: #bfe84f">StarTerra</span>
+                the </h1> <h1 class="l2"> first gamified</h1>
+
+                <button class="cy">Buy $stt</button>
+                <button class="cy">Apply For Ido</button>
+
+        </div>
+    </header>
+</section>
+<section class="collection-container1">
+    <a href="" class="collection1">
+        <img src="images/reynaV_AGENTS_587x900_Reyna.png" class="elec-img" alt="">
+        <p class="collection-title"></p>
+    </a>
+    <h2 class="section__title">About Us</h2>
+    <p class="section__text">            Starterra is the first gamified launchpad with a unique combination of guranteed prize pools.
+    </p>
+        <div class="card">        <p class="section__text1">Gamified NFT Integration</p>
+        </div>
+        <div class="card2">        <p class="section__text1">Gamified Tier System</p>
+        </div>
+
+        <a href="" class="rotate-text">StarTerra</a>
+
+</section>
+
+    <section id="men-tshirts-products"></section>
+
+
+
+<!--     
+    
+    <section id="men-tshirts-products-3"></section>
+    <section id="men-tshirts-products-2"></section>
+     -->
+
+
+
+    <footer> </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 400) {
+                    //  $(".navbar").css({"opacity" : "1"})
+                    // $(".navbar").css({"background-color" : "rgb(250, 249, 249,1)"})
+                    $(".navbar").css({ "background-color": "rgb(33, 31, 27,1)" })
+                } else {
+                    //  $(".navbar").css({"opacity" : ""})
+                    $(".navbar").css({ "background-color": "rgb(33, 31, 27,0.3)" })
+
+                }
+
+            })
+        })
+    </script>
+    <script src="nav.js"></script>
+    <script src="home.js"></script>
+    <script src="footer.js"></script>
+
+    <script>
+        getProducts('puma').then(data => createProductSlider(data, '#men-tshirts-products', 'Completed Sales'));
+        getProducts('women').then(data => createProductSlider(data, '#men-tshirts-products-2', 'Women'));
+        getProducts('men').then(data => createProductSlider(data, '#men-tshirts-products-3', 'Men'));
+
+    </script>
+</body>
+
+</html>
